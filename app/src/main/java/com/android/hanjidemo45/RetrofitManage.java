@@ -24,7 +24,7 @@ public class RetrofitManage {
     public void  sendRequest(String url){
         Retrofit retrofit= new Retrofit.Builder()
                 .baseUrl(url)
-               // .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+             //.addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
     }
